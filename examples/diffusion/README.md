@@ -62,6 +62,7 @@ In this command,
 - All configurations can be directly set in either YAML file or command line. Please refer to [`configs/__default__.yaml`](configs/llm.yaml) and `python -m deepcompressor.app.diffusion.ptq -h`.
 - The default evaluation datasets are [1024](configs/__default__.yaml#14) samples from [MJHQ](configs/__default__.yaml#33) and [DCI](configs/__default__.yaml#34).
 - If you would like to save quantized model checkpoint, please add `--save-model true` or `--save-model /PATH/TO/CHECKPOINT/DIR` in the command.
+- For mxfp4 type quantization run - `python -m deepcompressor.app.diffusion.ptq configs/model/flux.1-schnell.yaml configs/svdquant/mxfp4.yaml`
 
 
 ## Deployment
